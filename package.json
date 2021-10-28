@@ -1,0 +1,23 @@
+{
+  "name": "react-poster",
+  "version": "1.0.6",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZPhoenix1995/react-canvas-poster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZPhoenix1995/react-canvas-poster/issues"
+  },
+  "homepage": "https://github.com/ZPhoenix1995/react-canvas-poster#readme",
+  "dependencies": {
+    "qrcode": "^1.4.4"
+  }
+}
