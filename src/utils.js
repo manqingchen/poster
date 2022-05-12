@@ -1,4 +1,3 @@
-import QRCode from "qrcode";
 export function downLoadPoster(
   canvas,
   callback,
@@ -142,21 +141,21 @@ export function downLoadPoster(
     // 支持自定义画布
     customCanvas && customCanvas(context);
 
-    // 二维码
-    if (QRImg) {
-      const { url, width, Xaxis, Yaxis } = QRImg
-      QRCode.toDataURL(
-        url,
-        { width },
-        (err, url) => {
-          QRCodeImg.onload = function () {
-            context.drawImage(QRCodeImg, Xaxis, Yaxis);
-          };
-          QRCodeImg.src = url;
-          QRCodeImg.crossOrigin = "anonymous";
-        }
-      );
-    }
+    // // 二维码
+    // if (QRImg) {
+    //   const { url, width, Xaxis, Yaxis } = QRImg
+    //   QRCode.toDataURL(
+    //     url,
+    //     { width },
+    //     (err, url) => {
+    //       QRCodeImg.onload = function () {
+    //         context.drawImage(QRCodeImg, Xaxis, Yaxis);
+    //       };
+    //       QRCodeImg.src = url;
+    //       QRCodeImg.crossOrigin = "anonymous";
+    //     }
+    //   );
+    // }
   }
   setTimeout(() => {
     canvas.toBlob(

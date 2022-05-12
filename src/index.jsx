@@ -2,7 +2,7 @@ import * as React from 'react';
 import { downLoadPoster } from './utils';
 
 
-class DayuComponent extends React.Component {
+class Component extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -89,4 +89,4 @@ class DayuComponent extends React.Component {
   };
 }
 
-export default DayuComponent;
+export default Component;
